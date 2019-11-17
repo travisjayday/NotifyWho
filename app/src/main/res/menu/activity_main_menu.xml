@@ -1,0 +1,33 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_buy_premium"
+        android:title="@string/action_buy_premium_txt"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_set_default"
+        android:title="@string/action_set_default_tone"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_enable_notification_service"
+        android:title="@string/actione_enable_notification_service_txt"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/disable_whatsapp"
+        android:title="@string/action_disable_whatsapp_str"
+        app:showAsAction="never"/>
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_help"
+        android:title="@string/action_help_str"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_about"
+        android:title="@string/action_about_str"
+        app:showAsAction="never"/>
+</menu>

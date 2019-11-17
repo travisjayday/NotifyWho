@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    android:background="?android:selectableItemBackground">
+
+    <TextView
+        android:id="@+id/contact_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder_name"
+        android:layout_toEndOf="@id/contact_pic"
+        android:layout_alignTop="@id/contact_center_space"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#000"
+        android:maxLines="1"
+        android:ellipsize="end" />
+    
+    <View
+        android:id="@+id/contact_center_space"
+        android:layout_width="20dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="18dp"
+        />
+
+    <TextView
+        android:id="@+id/contact_notif_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/contact_icons"
+        android:layout_toEndOf="@id/contact_default_txt"
+        android:layout_alignBottom="@id/contact_center_space"
+        android:text="@string/placeholder_tone"
+        android:textColor="@color/darkGray"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/contact_default_txt"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@id/contact_pic"
+        android:layout_alignBottom="@id/contact_center_space"
+        android:text="@string/placeholder_default"
+        android:textColor="@color/colorPrimaryLight"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/contact_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBottom="@id/contact_center_space"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:scaleX="0.95"
+        android:scaleY="0.95"
+        android:drawableStart="@drawable/ic_notifications_active_black_24dp"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:text="@string/placeholder_divider"
+        android:drawableEnd="@drawable/ic_vibration_black_24dp"/>
+
+    <com.tzgames.ringer.views.RoundedImageView
+        android:id="@+id/contact_pic"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ic_default_user"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignStart="@id/contact_name_txt"
+        android:background="@color/lightGray"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

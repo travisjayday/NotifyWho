@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">NotifyWho</string>
+
+    <string name="advertise_premium_help_msg">Since <b>NotifyWho</b> is ad-free, you can only add <b>two</b> contacts with <b>one</b> vibration pattern. By supporting the developer with <b>0.99$</b>, you can add unlimited contacts &amp; unlimited vibrations! You can also create your own vibrations! Click to purchase premium.</string>
+
+    <string name="disable_whatsapp_ringtones_tit">"Disable WhatsApp Ringtone"</string>
+    <string name="disable_whatsapp_ringtones_msg">You have to set \"Notification Tone\" and \"Vibrate\" to silent/None in WhatsApp settings.</string>
+    <string name="disable_whatsapp_ringtones_btn">OK, take me there!</string>
+    <string name="disable_whatsapp_toast_inst">Click on \"Notification tone\", select \"None\".\nThen click on \"Vibrate\", select \"Off\" </string>
+
+    <string name="enable_service_msg">Please enable \"[NotifyWho] Custom Ringtones Service\" to allow this app to work.</string>
+    <string name="enable_service_tit">Enable Custom Ringtones</string>
+    <string name="enable_service_btn">OK, take me there!</string>
+
+    <string name="no_contacts">Almost There!\n\n Press the plus button on the bottom right to assign custom tones &amp; vibrations to a contact."</string>
+    <string name="warning_service_not_enabled">Warning: Service was not enabled! Expect unexpected behavior! Restart app to fix&#8230;</string>
+
+    <string name="action_set_default_tone">Set Default Tone</string>
+    <string name="action_buy_premium_txt">Go Premium!</string>
+    <string name="actione_enable_notification_service_txt">Enable NotifyWho Service</string>
+    <string name="action_help_str">Help</string>
+    <string name="action_about_str">About</string>
+    <string name="action_disable_whatsapp_str">Disable Whatsapp Tones</string>
+
+    <string name="about_msg">This App was developed by Travis Ziegler. Contact travisjayday@gmail.com for feedback or recommendations.</string>
+    <string name="about_ok">OK</string>
+    <string name="help_msg">This app replaces your Whatsapp notification manager.
+        Whenever you receive a Whatsapp from someone, this app checks whether you have defined a custom notification
+        sound for that someone. If you have, it will play that sound; if not, it will play the system default sound.
+        For this app to work properly, you must grant it write / contact permission, enable the Notification Service
+        and disable Whatsapp Notification sounds. Re-install if not working. Contact travisjayday@gmail.com for more help.</string>
+    <string name="set_default_tone_msg">Upon getting messages from contacts to whom you have not assigned a
+        custom notification tone, the default notification tone will play.</string>
+    <string name="set_default_tone_btn">Pick Default Tone!</string>
+
+    <string name="pref_previously_started">prev_start</string>
+
+    <string name="perm_screen1_h">Welcome to NotifyWho</string>
+    <string name="perm_msg">NotifyWho replaces WhatsApp\'s notification tones and needs
+        access to contacts to assign and save custom tones</string>
+    <string name="perm_contact_h">Read Contacts Permission</string>
+    <string name="perm_contact_txt">Need permission to access contacts.</string>
+    <string name="perm_btn">Okay, let\'s do it!</string>
+
+    <string name="notif_screen2_h">A New Notification Manager</string>
+    <string name="notif_msg">NotifyWho augments your WhatsApp notifications and needs special permissions.</string>
+    <string name="notif_read_h">Manage Notifications Permission</string>
+    <string name="notif_read_txt">Need to read and manage notifications</string>
+    <string name="notif_instructions">Please enable NotifyWho in settings</string>
+    <string name="notif_btn">Take me there</string>
+    <string name="notif_not_enabled">Notification Service not enabled&#8230;Please enable it for NotifyWho to work!</string>
+    <string name="permissions_not_enabled">App will not work. No Read Contact Permission. Restart App and enable Permissions!</string>
+
+    <string name="wa_screen3_h">Silence WhatsApp</string>
+    <string name="wa_msg">You don\'t want double notification sounds, so you have to disable WhatsApp Notification sounds.</string>
+    <string name="wa_disable_h">Disable WhatsApp Sounds</string>
+    <string name="wa_disable_txt">Set Notification Tone to None</string>
+    <string name="wa_instructions">Please set your WhatsApp notification tone to None.</string>
+    <string name="wa_btn">Take me there</string>
+
+    <string name="fin_screen4_h">Setup Finished</string>
+    <string name="fin_msg_1">If you did not disable WhatsApp\'s sounds, you should do so later. Otherwise, you are all set.</string>
+    <string name="fin_msg_2">You can now start to assign custom ringtones to contacts of your choice.</string>
+    <string name="fin_btn">Got it</string>
+
+    <string name="toolbar_contacts">Contacts</string>
+    <string name="toolbar_default">Default</string>
+    <string name="toolbar_help">Help</string>
+
+    <string name="rate_txt">Rate NotifyWho!</string>
+
+    <string name="contact_dev_h">Contact Developer</string>
+    <string name="contact_dev_msg">Click to contact
+        <font color="#469cee" face="monospace">travisjayday@gmail.com</font> to report bugs and leave feedback.</string>
+
+    <string name="vib_browse_currently_set">Currently Set</string>
+    <string name="save_btn">Save</string>
+
+    <string name="set_default_explanation_h">Default Tones</string>
+    <string name="set_default_explanation_msg">Default tones &amp; vibrations play whenever you get a message from someone
+        outside of your custom notifications list. Click below to set defaults. </string>
+    <string name="current_set_default_tone">Current Default Tone</string>
+    <string name="current_set_default_vib">Current Default Vibration</string>
+
+    <string name="main_dialog_title">Action for </string>
+    <string name="main_dialog_set_notif_tone">Set Notification Tone</string>
+    <string name="main_dialog_set_vib_pattern">Set Vibration Pattern</string>
+    <string name="main_dialog_delete_contact">Delete </string>
+
+    <string name="vib_gen_custom_name_placeholder">Custom Vibration 1</string>
+    <string name="vib_gen_custom_pattern_placeholder">ex: 200, 300, 200, 300</string>
+    <string name="vib_gen_press_to_start">press here to start</string>
+    <string name="vib_picker_delete_custom_vib">Delete </string>
+    <string name="vib_picker_batterysaver_enabled">No vibrations will play since battery saver mode is enabled. Please disabled it!</string>
+
+    <string name="vib_gen_pattern_parsing_error">Failed to parse given vibration pattern! Try retyping it to fix it!</string>
+    <string name="vib_gen_pattern_naming_error">Duplicate vibration pattern exists. Try re-naming it. [Read/Write error].</string>
+
+    <string name="not_premium_dialog_title">Oh No!</string>
+    <string name="not_premium_dialog_txt">You\'ve already added <b>two</b> custom contacts. Please support the developer and consider buying premium for $0.99 to add unlimited contacts and set custom vibrations!</string>
+    <string name="not_premium_dialog_txt_vib">You\'ve already set <b>one</b> custom vibration. Please support the developer and consider buying premium for $0.99 to add unlimited contacts and set custom vibrations!</string>
+    <string name="not_premium_no_action">Couldn\'t complete action because you are not premium!</string>
+
+    <string name="placeholder_name">John Smith</string>
+    <string name="placeholder_tone">Helios tone | Vibration Name</string>
+    <string name="placeholder_default">[Default]</string>
+    <string name="placeholder_divider">\ |\ </string>
+</resources>

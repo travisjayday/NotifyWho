@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/vibration_picker_save_btn"
+        android:title="@string/save_btn"
+        android:background="?attr/actionBarItemBackground"
+        app:showAsAction="always"
+        android:textAllCaps="false"
+        android:enabled="false" />
+</menu>

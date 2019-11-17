@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/vibration_picker_holder"
+    android:descendantFocusability="blocksDescendants">
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/selection_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#8C8C8C"
+        android:textSize="16sp"
+        android:buttonTint="@color/colorPrimary"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+    </androidx.appcompat.widget.AppCompatRadioButton>
+
+</FrameLayout>
