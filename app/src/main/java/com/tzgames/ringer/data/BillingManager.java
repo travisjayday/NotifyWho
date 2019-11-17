@@ -1,6 +1,9 @@
 package com.tzgames.ringer.data;
 
 import android.app.Activity;
+
+import com.android.billingclient.api.AcknowledgePurchaseParams;
+import com.android.billingclient.api.AcknowledgePurchaseResponseListener;
 import com.google.android.material.snackbar.Snackbar;
 
 import com.android.billingclient.api.BillingClient;
@@ -72,8 +75,8 @@ public class BillingManager implements PurchasesUpdatedListener {
                 && purchases != null) {
             for (Purchase purchase : purchases) {
                 if (purchase.getSku().equals(PREMIUM_IAP_SKU)) {
-                    activity.showSnackbar("Purchased Premium!", Snackbar.LENGTH_LONG);
                     premium = null;
+                    isPremium();
                 }
             }
         } else if (billingResult.getResponseCode() == BillingClient.BillingResponseCode.USER_CANCELED) {
@@ -81,7 +84,7 @@ public class BillingManager implements PurchasesUpdatedListener {
             activity.showSnackbar("Cancelled Purchase", Snackbar.LENGTH_SHORT);
         } else {
             // Handle any other error codes.
-            activity.showSnackbar("Error: " + billingResult.getResponseCode(), Snackbar.LENGTH_LONG);
+            activity.showSnackbar("Error: " + billingResult.getDebugMessage(), Snackbar.LENGTH_LONG);
         }
     }
 
@@ -101,6 +104,25 @@ public class BillingManager implements PurchasesUpdatedListener {
         for (Purchase item : purchases) {
             if (item.getSku().equals(PREMIUM_IAP_SKU)) {
                 premium = true;
+                if (!item.isAcknowledged()){
+                    AcknowledgePurchaseParams acknowledgePurchaseParams =
+                            AcknowledgePurchaseParams.newBuilder()
+                                    .setPurchaseToken(item.getPurchaseToken())
+                                    .build();
+                    billingClient.acknowledgePurchase(acknowledgePurchaseParams,
+                            new AcknowledgePurchaseResponseListener() {
+                        @Override
+                        public void onAcknowledgePurchaseResponse(BillingResult billingResult) {
+                            if (billingResult.getResponseCode() != BillingClient.BillingResponseCode.OK) {
+                                activity.showSnackbar("Error: " + billingResult.getDebugMessage(),
+                                        Snackbar.LENGTH_LONG);
+                            }
+                            else {
+                                activity.showSnackbar("Hello, Premium User!", Snackbar.LENGTH_LONG);
+                            }
+                        }
+                    });
+                }
                 return true;
             }
         }

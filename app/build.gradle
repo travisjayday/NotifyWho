@@ -6,7 +6,7 @@ android {
         applicationId "com.tzgames.ringer"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 7
+        versionCode 8
         versionName "1.1"
 
         // for compat drawing animatable vector in FinishFragment, PermissionsActivity
@@ -29,5 +29,5 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
-    implementation 'com.android.billingclient:billing:2.0.0'
+    implementation 'com.android.billingclient:billing:2.0.3'
 }

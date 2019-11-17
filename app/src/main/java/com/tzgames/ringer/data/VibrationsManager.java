@@ -147,6 +147,8 @@ public class VibrationsManager {
             return;
         }
 
+        if (customVibrations == null) readDataFile(context);
+
         for (String s : vibrations.keySet()) {
             VibrationPattern pattern = getVibrations(context).get(s);
             if (pattern == null) continue;
