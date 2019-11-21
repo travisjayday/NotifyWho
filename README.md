@@ -47,7 +47,7 @@ The app is divided into three main activities:
       - ...
 
 ## On Google Play
-Link to Google Play Store page: [link](https://github.com/travisjayday/NotifyWho/tree/master/app/src/main/java/com/tzgames/ringer)
+Link to Google Play Store page: [link](https://play.google.com/store/apps/details?id=com.tzgames.ringer)
 
 ## Contact
 The developer / maintainer is <travisjayday@gmail.com>
